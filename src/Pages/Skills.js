@@ -1,7 +1,12 @@
 import React from "react";
+import Header from "../Components/Header";
 
 function Skills() {
-    return ( <h1>About</h1> );
+    return ( 
+        <>
+          <Header />
+        </>
+     );
 }
 
 export default Skills;
