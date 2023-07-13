@@ -1,11 +1,9 @@
 import React from "react";
-import Header from "../Components/Header";
 import image from '../ProfileImage/home-image2.png'
 
 function Home() {
     return ( 
     <div>
-       <Header />
        <section id="home" class="home-section">
             <section class="home-container">
               <h1>Gabriel Galeski</h1>

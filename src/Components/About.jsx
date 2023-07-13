@@ -1,11 +1,9 @@
 import React from "react";
-import Header from "../Components/Header";
 import profileImage from '../ProfileImage/gabriel.jpg';
 
 function About() {
     return ( 
         <>
-        <Header />
         <section class="about-section" id="about">
           <article class="about-container">
               <h2>Sobre Mim</h2>
