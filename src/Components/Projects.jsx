@@ -1,11 +1,22 @@
 import React from "react";
-import Header from "./Header";
+import { projects } from "../utils/projectData";
 
 function Projects() {
     return ( 
-    <>
-        <Header />
-    </> 
+        <section className="projects-section">
+            <h2>Projects</h2>
+            <div className="allProjects">
+                {projects.map((project) => {
+                    return (
+                    <div>
+                        <img src={project.image} alt="imagem do projeto" />
+                        <p>{project.name}</p>
+                        <a href={project.link} target='_blank' rel="noreferrer" >Repositorio</a>
+                    </div>
+                )
+                })}
+            </div>
+        </section>
     );
 }
 

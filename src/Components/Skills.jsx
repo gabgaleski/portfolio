@@ -1,4 +1,5 @@
 import React from "react";
+import { badgesOther, badgesFront, badgesBack, badgesTest } from '../utils/badgesData';
 
 function Skills() {
     return ( 
@@ -8,25 +9,33 @@ function Skills() {
                 <section class="skills-container" id="front">
                     <h4>Front-End</h4>
                     <ul>
-
+                    {badgesFront.map((badage) => (
+                            <li><img src={badage} alt="badageImg" /></li>
+                        ))}
                     </ul>
                 </section>
                 <section class="skills-container" id="back">
                     <h4>Back-End</h4>
                     <ul>
-
+                    {badgesBack.map((badage) => (
+                            <li><img src={badage} alt="badageImg" /></li>
+                        ))}
                     </ul>
                 </section>
                 <section class="skills-container">
                     <h4>Tests</h4>
                     <ul>
-
+                    {badgesTest.map((badage) => (
+                            <li><img src={badage} alt="badageImg" /></li>
+                        ))}
                     </ul>
                 </section>
                 <section class="skills-container">
                     <h4>Other</h4>
                     <ul>
-
+                        {badgesOther.map((badage) => (
+                            <li><img src={badage} alt="badageImg" /></li>
+                        ))}
                     </ul>
                 </section>
             </section>

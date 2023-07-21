@@ -126,58 +126,33 @@ strong {
 .all-skills {
   display: flex;
   flex-wrap: wrap;
-  width: 70%;
-  justify-content: center;
+  width: 50%;
+  justify-content:space-between;
 }
 
 .skills-container {
-  align-items: center;
-  border: 1px solid white;
-  border-radius: 10px;
+  margin-top: 5%;
   display: flex;
   flex-direction: column;
-  justify-content:flex-start;
-  margin: 20px;
+  align-items: center;
 }
 
-.skills-container ul {
+.skills-container > ul {
+  border: 1px solid white;
+  border-radius: 5px;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  width: 450px;
-  gap: 60px;
+  width: 450px ;
+  height: 150px;
+  justify-content: space-around;
 }
 
-.skills-container ul li {
-  text-align: center;
-  border: 1px solid white;
-  height: 110px;
-  margin: 10px 0 10px 0;
-  width: 85px;
+li > img {
+  border-radius: 5px;
 }
 
-.skills-container img {
-  height: 70px;
-  width: 60px;
-}
-
-.project-section {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  margin: 20px 0 20px 0;
-}
-
-.project-section ul {
-  display: flex;
-  height: 400px;
-  width: 60%;
-}
-
-.project-section ul li {
-  border: 1px solid white;
+li {
+  margin: 5px;
 }
 
 footer {

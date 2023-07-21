@@ -12,6 +12,7 @@ function Page() {
           <Home />
           <About />
           <Skills />
+          <Projects />
         </>
      );
 }
