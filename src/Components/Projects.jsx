@@ -10,7 +10,10 @@ function Projects() {
                     return (
                     <div>
                         <img src={project.image} alt="imagem do projeto" />
-                        <p>{project.name}</p>
+                        <p>
+                        {project.tools.map((tool) => <span>{`${tool}`}</span>)}
+                        </p>
+                        <h5>{project.name}</h5>
                         <a href={project.link} target='_blank' rel="noreferrer" >Repositorio</a>
                     </div>
                 )
