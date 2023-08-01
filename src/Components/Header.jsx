@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import linkedin from '../img/linkedin.svg';
 import github from '../img/githubHeader.svg';
 
@@ -8,10 +7,10 @@ function Header() {
         <div className="header-section" >
           <header>
             <nav class="page-navegation">
-                <Link to='/' >Home</Link>
-                <Link to='/about'>About</Link>
-                <Link to='/skills' >Skills</Link>
-                <Link to='/projects' >Projects</Link>
+                <a href="#home" >Home</a>
+                <a href='#about'>About</a>
+                <a href='#skills' >Skills</a>
+                <a href='#proj' >Projects</a>
             </nav>
             <nav>
               <a href="https://www.linkedin.com/in/gabriel-galeski/" target="_blank" rel="noreferrer">

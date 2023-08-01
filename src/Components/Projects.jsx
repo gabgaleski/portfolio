@@ -3,12 +3,12 @@ import { projects } from "../utils/projectData";
 
 function Projects() {
     return ( 
-        <section className="projects-section">
+        <section id="proj" className="projects-section">
             <h2>Projects</h2>
             <div className="allProjects">
                 {projects.map((project) => {
                     return (
-                    <div>
+                    <div className="project" >
                         <img src={project.image} alt="imagem do projeto" />
                         <p>
                         {project.tools.map((tool) => <span>{`${tool}`}</span>)}

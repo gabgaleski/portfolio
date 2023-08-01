@@ -4,7 +4,7 @@ import image from '../ProfileImage/home-image2.png'
 function Home() {
     return ( 
     <div>
-       <section id="home" class="home-section">
+       <section id="home" class="home-section home">
             <section class="home-container">
               <h1>Gabriel Galeski</h1>
               <h3>Desenvolvedor Web, Front-end</h3>
