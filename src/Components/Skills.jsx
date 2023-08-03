@@ -4,6 +4,7 @@ import { badgesOther, badgesFront, badgesBack, badgesTest } from '../utils/badge
 function Skills() {
     return ( 
       <section class="skills-section" id="skills">
+        <hr></hr>
             <h2>Skills & Tools</h2>
             <section class="all-skills">
                 <section class="skills-container" id="front">
