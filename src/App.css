@@ -196,10 +196,15 @@ li {
   justify-content: center;
 }
 
-.projects-section img {
+.proj-img {
+  border-bottom: 1px solid #20c2a1;
   border-radius: 15px 15px 0 0;
   height: 300px;
   width: 270px;
+}
+
+.icon-img {
+  width: 50px;
 }
 
 .project p {
@@ -212,7 +217,13 @@ li {
   margin-right: 8px;
   border: 1px solid white;
   border-radius: 5px;
-  background-color: rgb(85, 84, 84);
+  color: #20c2a1;
+  padding: 2px;
+}
+
+.span-rep {
+  font-size: 12px;
+  margin-top: -10px
 }
 
 .project a {
