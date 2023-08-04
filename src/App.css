@@ -10,7 +10,7 @@ li {
 }
 
 body {
-  background-color: #1d1d1d;
+  background-color: #181818;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -66,8 +66,18 @@ header {
   display: flex;
   justify-content: center;
   padding-top: 10%;
-  background-color: #1d1d1d;
-  background: linear-gradient(180deg, rgba(56,55,55,1) 0%, rgba(29,29,29,1) 6%);
+  background-image: url('../src/ProfileImage/bg.jpg');
+  background-size: cover;
+}
+
+.core-skills {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.core-skills > img {
+  width: 35px;
 }
 
 hr {
@@ -252,3 +262,71 @@ a {
   text-decoration: none;
   color: white;
 }
+
+.btn-div {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.btn-home {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #20c2a1;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: none;
+ }
+ 
+ .btn-home:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #FFD401;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+ }
+ 
+ .btn-home:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+ }
+ 
+ .btn-home span {
+  text-align: center;
+  text-decoration: none;
+  padding: 18px 25px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+ }
+ 
+ .btn-home:hover span {
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+ }
+ 
+ @keyframes scaleUp {
+  0% {
+   transform: scale(1);
+  }
+ 
+  50% {
+   transform: scale(0.95);
+  }
+ 
+  100% {
+   transform: scale(1);
+  }
+ }
+ 
