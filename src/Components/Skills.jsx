@@ -4,14 +4,17 @@ import { badgesOther, badgesFront, badgesBack, badgesTest } from '../utils/badge
 function Skills() {
     return ( 
       <section class="skills-section" id="skills">
-        <hr></hr>
             <h2>Skills & Tools</h2>
             <section class="all-skills">
                 <section class="skills-container" id="front">
                     <h4>Front-End</h4>
                     <ul>
                     {badgesFront.map((badage) => (
-                            <li><img src={badage} alt="badageImg" /></li>
+                            <li>
+                                <img src={badage.icon} alt="badageImg" />
+                                <p>{badage.name}</p>
+                            </li>
+
                         ))}
                     </ul>
                 </section>
@@ -19,7 +22,10 @@ function Skills() {
                     <h4>Back-End</h4>
                     <ul>
                     {badgesBack.map((badage) => (
-                            <li><img src={badage} alt="badageImg" /></li>
+                               <li>
+                                 <img src={badage.icon} alt="badageImg" />
+                                 <p>{badage.name}</p>
+                              </li>
                         ))}
                     </ul>
                 </section>
@@ -27,7 +33,10 @@ function Skills() {
                     <h4>Tests</h4>
                     <ul>
                     {badgesTest.map((badage) => (
-                            <li><img src={badage} alt="badageImg" /></li>
+                            <li>
+                              <img src={badage.icon} alt="badageImg" />
+                              <p>{badage.name}</p>
+                            </li>
                         ))}
                     </ul>
                 </section>
@@ -35,7 +44,10 @@ function Skills() {
                     <h4>Other</h4>
                     <ul>
                         {badgesOther.map((badage) => (
-                            <li><img src={badage} alt="badageImg" /></li>
+                            <li>
+                              <img src={badage.icon} alt="badageImg" />
+                              <p>{badage.name}</p>
+                            </li>
                         ))}
                     </ul>
                 </section>

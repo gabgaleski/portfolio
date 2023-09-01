@@ -1,16 +1,17 @@
 import React from "react";
 import linkedin from '../img/linkedin.svg';
 import github from '../img/githubHeader.svg';
+import { Link } from "react-router-dom";
 
 function Header() {
     return ( 
         <div className="header-section" >
           <header>
             <nav class="page-navegation">
-                <a href="#home" >Home</a>
-                <a href='#about'>About</a>
-                <a href='#skills' >Skills</a>
-                <a href='#proj' >Projects</a>
+                <Link to="/" >Home</Link>
+                <Link to='/about'>About</Link>
+                <Link to='/skills' >Skills</Link>
+                <Link to='/projects' >Projects</Link>
             </nav>
             <nav>
               <a href="https://www.linkedin.com/in/gabriel-galeski/" target="_blank" rel="noreferrer">
