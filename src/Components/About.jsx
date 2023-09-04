@@ -7,14 +7,14 @@ function About() {
           <article class="about-container">
               <h2>Sobre Mim</h2>
                 <section class="section-infos-about">
-                  <div>
-                    <p>Eu sou o Gabriel Galeski, desenvolvedor <strong>Front-End</strong>, apaixonado por tecnologia, mais especificamente pela programação e tudo que ela proporciona.
+                  <div className="text-about">
+                    <p>Eu sou o Gabriel Galeski, desenvolvedor web <strong>Fullstack</strong>, apaixonado por tecnologia, que acredita na mudança e no impacto que ela pode causar. Resolver problemas e criar acessibilidade sao pilares que me motivam no desenvolvimento de software.
                     </p>
                     <p>
-                    Minha historia com a tecnologia começou com os jogos, quando ainda criança, e des de entao, sempre tive a curiosidade necessaria pra procurar aprender.
+                    Antes de me tornar desenvolvedor, fiz Bacharelado em Ciências Econômicas, o qual tranquei no fim do curso para me dedicar ao desenvolvimento de software na <strong>Trybe</strong>, porem carrego conhecimento nas areas de gestao e financeira que estao sempre presente no meu dia-a-dia como programador.
                     </p>
                     <p>
-                    Apesar disso, so fui iniciar meus aprendizados de forma mais dedicada no ano de 2022 onde pausei minha faculdade de Ciencias Economicas para ingressar na <strong>Trybe</strong> me dedicando diariamente ao curso e ao aprendizado. Curso esse que me formarei desenvolvedor Full Stack com diversos projetos ja realizados e a realizar ja que a maravilha da tecnologia é a sua mutabilidade constante visando criar e melhorar.
+                    Amo criar e melhorar a experiência das pessoas, e, por isso, estou sempre em busca de aprendizado, participando ativamente de bootcamps e eventos da área. Estou aberto a novas oportunidades e parcerias para criar soluções inovadoras e impactantes.
                     </p>
                   </div>
                   <img src={ profileImage } alt="Foto de Gabriel" />

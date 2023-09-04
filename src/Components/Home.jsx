@@ -23,7 +23,7 @@ function Home() {
                 <img src={ts} alt="ts icon" />
               </span>
               <hr></hr>
-              <p>Desenvolvedor Fullstack, estudante da <strong>Trybe</strong>, apaixonado pela criação e mudança que a programação e toda a tecnologia traz na vida das pessoas. Criar, mudar e melhorar é o que amo fazer, e por isso <strong>amo programar.</strong></p>
+              <p><strong>Desenvolvedor Fullstack</strong>, apaixonado pela criação e mudança que a programação e toda a tecnologia traz na vida das pessoas. Criar, mudar e melhorar é o que amo fazer, e por isso <strong>amo programar.</strong></p>
               <div className="btn-div">
               <button className="btn-home">
                 <span>Currículo</span>
