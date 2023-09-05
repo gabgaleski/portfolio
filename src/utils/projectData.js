@@ -12,6 +12,13 @@ export const projects = [
   description: 'Front-End Aplication'
 },
 {
+  name: 'Futebol Clube',
+  link: 'https://github.com/gabgaleski/futebol-clube',
+  image: futebol,
+  tools: ['Typescript', 'Express', 'React', 'MySQL'],
+  description: 'Full-Stack Aplication'
+},
+{
   name: 'Trybe Wallet',
   link: 'https://github.com/gabgaleski/trybe-wallet',
   image: wallet,
@@ -31,13 +38,6 @@ export const projects = [
   image: 'https://blog.geekhunter.com.br/wp-content/uploads/2019/11/Sua-API-n%C3%A3o-%C3%A9-RESTful-Entenda-por-qu%C3%AA..jpg.webp',
   tools: ['Node', 'Express', 'Docker', 'MySQL'],
   description: 'Back-End Aplication'
-},
-{
-  name: 'Futebol Clube',
-  link: 'https://github.com/gabgaleski/futebol-clube',
-  image: futebol,
-  tools: ['Typescript', 'Express', 'React', 'MySQL'],
-  description: 'Full-Stack Aplication'
 },
 {
   name: 'Trybe Tunes',

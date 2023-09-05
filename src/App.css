@@ -11,22 +11,13 @@ li {
 
 body {
   background-color: #121214;
-  /* display: flex;
-  flex-direction: column;
-  flex-wrap: wrap; */
-}
-
-.header-section {
-  display: flex;
-  justify-content: center;
 }
 
 header {
   align-items: center;
-  border-bottom: 1px solid #20c2a1;
-  border-radius: 0 0 5px 5px;
+  border-bottom: 1px solid #20c2a2bb;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   height: 7vh;
   width: 100%;
   background-color: #213a42dc;
@@ -35,22 +26,20 @@ header {
 .page-navegation {
   display: flex;
   justify-content: space-between;
-  width: 30vw;
+  width: 30%;
 }
 
 .page-navegation > a {
   padding-left: 5px;
   font-weight: 700;
+  text-decoration: none;
+  color: white;
+  margin: 0 3% 0 3%;
 }
 
 .page-navegation a:hover {
   color: #20c2a1;
   text-decoration: underline;
-}
-
-.nav-link {
-  font-size: 17px;
-  font-weight: 700;
 }
 
 .linkedin-icon {
@@ -111,7 +100,6 @@ strong {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 5%;
 }
 
 .about-container {
@@ -126,6 +114,7 @@ strong {
   color:#23f0c7;
   font-style: italic;
   font-size: xx-large;
+  padding: 2% 0 2% 0;
 }
 
 .section-infos-about {
@@ -158,6 +147,13 @@ strong {
   flex-direction: column;
   justify-content: center;
   padding-top: 1%;
+}
+
+.skills-section > h2 {
+  color: #23f0c7;
+  font-style: italic;
+  font-size: xx-large;
+  padding: 1% 0 1% 0;
 }
 
 .all-skills {
@@ -208,14 +204,13 @@ li > p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 5%;
 }
 
 .projects-section h2 {
   color: #23f0c7;
   font-style: italic;
   font-size: xx-large;
-  padding-bottom: 1%;
+  padding: 2% 0 2% 0;
 }
 
 .allProjects {
@@ -245,7 +240,7 @@ li > p {
 
 .project:hover {
   opacity: 0.8;
-  scale: 1.03;
+  scale: 1.01;
 }
 
 .project p {
@@ -264,26 +259,39 @@ li > p {
 
 footer {
   text-align: center;
-  background-color: gray;
   height: 100%;
   width: 100%;
-  margin-top: 20px;
+  margin: 5% 0 1% 0;
 }
 
-footer p {
-  margin: 0px;
+footer > section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-a {
+footer > p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+footer > section > a {
+  border-radius: 5px;
+  padding: 2px 1% 2px 1%;
   text-decoration: none;
   color: white;
+}
+
+footer > section > a:hover {
+  background-color: #20c2a254;
 }
 
 .btn-div {
   margin-top: 5%;
   display: flex;
   justify-content: space-around;
-  width: 80%;
+  width: 75%;
+  flex-wrap: wrap;
 }
 
 .btn-home {
@@ -297,6 +305,7 @@ a {
   box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   border: none;
+  margin: 5px;
  }
  
  .btn-home:after {

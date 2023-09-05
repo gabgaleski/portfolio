@@ -8,6 +8,15 @@ import express from '../ProfileImage/express.svg';
 import ts from '../ProfileImage/ts.svg';
 
 function Home() {
+
+  const cvDownload = () => {
+    window.location.href = "https://drive.google.com/u/0/uc?id=1pE4eQVYlyjaJPS8wZOeUf_UDI4CB9t2S&export=download"
+  }
+
+const contactBtn = () => {
+  window.location.href = "mailto:gabgaleski@gmail.com";
+}
+
     return ( 
     <div>
        <section id="home" class="home-section">
@@ -25,10 +34,10 @@ function Home() {
               <hr></hr>
               <p><strong>Desenvolvedor Fullstack</strong>, apaixonado pela criação e mudança que a programação e toda a tecnologia traz na vida das pessoas. Criar, mudar e melhorar é o que amo fazer, e por isso <strong>amo programar.</strong></p>
               <div className="btn-div">
-              <button className="btn-home">
+              <button onClick={ cvDownload } className="btn-home">
                 <span>Currículo</span>
               </button>
-              <button className="btn-home">
+              <button onClick={ contactBtn } className="btn-home">
                 <span>Contato</span>
               </button>
               </div>
