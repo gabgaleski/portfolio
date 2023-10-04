@@ -1,13 +1,14 @@
 import React from "react";
-import profileImage from '../ProfileImage/gabriel.jpg';
+import {FcAbout} from "react-icons/fc";
 
 function About() {
     return (
         <section class="about-section" id="about">
+          <h2><FcAbout className="about-icon" size={50}/>Sobre Mim</h2>
+          <p className="subtitle">Conheça um pouco mais sobre quem eu sou e as principais tecnologias que domino.</p>
           <article class="about-container">
-              <h2>Sobre Mim</h2>
                 <section class="section-infos-about">
-                  <div className="text-about">
+                    <h3>Quem sou eu?</h3>
                     <p>Eu sou o Gabriel Galeski, desenvolvedor web <strong>Fullstack</strong>, apaixonado por tecnologia, que acredita na mudança e no impacto que ela pode causar. Resolver problemas e criar acessibilidade sao pilares que me motivam no desenvolvimento de software.
                     </p>
                     <p>
@@ -16,8 +17,26 @@ function About() {
                     <p>
                     Amo criar e melhorar a experiência das pessoas, e, por isso, estou sempre em busca de aprendizado, participando ativamente de bootcamps e eventos da área. Estou aberto a novas oportunidades e parcerias para criar soluções inovadoras e impactantes.
                     </p>
+                </section>
+                <section class="section-skills">
+                  <h3>Tecnologias</h3>
+                  <div className="stacks">
+                    <span className="stack">Javascript</span>
+                    <span className="stack">React</span>
+                    <span className="stack">Redux</span>
+                    <span className="stack">HTML</span>
+                    <span className="stack">CSS</span>
+                    <span className="stack">Node</span>
+                    <span className="stack">Express</span>
+                    <span className="stack">MySQL</span>
+                    <span className="stack">Git</span>
+                    <span className="stack">Typescript</span>
+                    <span className="stack">Docker</span>
+                    <span className="stack">Sequelize</span>
+                    <span className="stack">Jest</span>
+                    <span className="stack">Mocha</span>
+                    <span className="stack">RTL</span>
                   </div>
-                  <img src={ profileImage } alt="Foto de Gabriel" />
                 </section>
           </article>
         </section>

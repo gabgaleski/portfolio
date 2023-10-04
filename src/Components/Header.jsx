@@ -1,20 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import homeImage from '../ProfileImage/home-image2.png'
 
 function Header() {
     return ( 
-        <div className="header-section" >
-          <header>
-          <nav>
-            </nav>
+          <header className="header-container">
+            <div className="header-title">
+              <img src={ homeImage } alt="profile" />
+              <span>Gabriel Galeski</span>
+            </div>
             <nav class="page-navegation">
-                <Link to="/" >Home</Link>
-                <Link to='/about'>Sobre</Link>
-                <Link to='/projects' >Projetos</Link>
-                <Link to='/skills' >Habilidades</Link>
+                <a href="#home" >Home</a>
+                <a href='#about'>Sobre</a>
+                <a href='#projects' >Projetos</a>
+                <a href='#contact' >Contato</a>
             </nav>
           </header>
-    </div>
      );
 }
 
