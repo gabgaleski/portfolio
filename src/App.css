@@ -29,9 +29,16 @@ body {
   justify-content: space-between;
 }
 
+.name {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
 .header-title > img {
-  width: 100px;
+  width: 70px;
   margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 50px;
 }
 
 .header-title > img:hover {
@@ -64,7 +71,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  min-height: 80vh;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -107,30 +114,30 @@ button {
   margin: 5px;
  }
  
- button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
- }
+button span {
+ cursor: pointer;
+ display: inline-block;
+ position: relative;
+ transition: 0.5s;
+}
+
+button span:after {
+ content: '»';
+ position: absolute;
+ opacity: 0;
+ top: 0;
+ right: -15px;
+ transition: 0.5s;
+}
+
+button:hover span {
+ padding-right: 15px;
+}
  
- button span:after {
-  content: '»';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -15px;
-  transition: 0.5s;
- }
- 
- button:hover span {
-  padding-right: 15px;
- }
- 
- button:hover span:after {
-  opacity: 1;
-  right: 0;
- }
+button:hover span:after {
+ opacity: 1;
+ right: 0;
+}
 
 /* About Style */
 
@@ -138,7 +145,6 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 80vh;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -160,14 +166,14 @@ button {
 }
 
 .about-container {
-  margin: 1%;
+  margin: 1% 0 1% 0;
   display: flex;
   width: 70%;
+  flex-wrap: wrap;
 }
 
 .section-infos-about {
   width: 50%;
-  margin-right: 5%;
 }
 
 .section-infos-about > p {
@@ -183,15 +189,13 @@ button {
 
 .stacks {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 2%;
-  width: 75%;
-  justify-content: space-between;
+  flex-direction: column;
+  width: 50%;
+  margin: 1%;
 }
 
 .stack {
   font-size: 1.2rem;
-  margin-right: 5%;
   background-color: rgba(163, 163, 163, 0.61);
   border-radius: 5px;
   padding: 8px;
@@ -205,8 +209,6 @@ button {
   flex-direction: column;
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  flex-wrap: wrap;
-  padding: 1%;
 }
 
 .projects-section > h2 {
@@ -227,7 +229,6 @@ button {
   flex-direction: column;
   align-items: center;
   width: 80%;
-  flex-wrap: wrap;
   border-left: 1px solid rgba(0, 0, 0, 0.1);
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -239,7 +240,6 @@ button {
   padding: 1%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .div-img > img {
@@ -262,7 +262,7 @@ button {
 .proj-infos {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 45%;
 }
 
 .description {
@@ -276,6 +276,8 @@ button {
   flex-direction: column;
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 3%;
+  padding-top: 3%;
 }
 
 .form-contact {
@@ -331,4 +333,33 @@ button {
 
 .gh-link {
   color: black;
+}
+
+@media screen and (max-width: 1300px) {
+
+  .div-img {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .proj-title {
+    margin-bottom: 5%;
+  }
+
+  .proj-infos {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    align-items: center;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    padding: 1%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
 }
