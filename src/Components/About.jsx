@@ -43,6 +43,7 @@ function About() {
               <span className="stack">Jest</span>
               <span className="stack">Mocha</span>
               <span className="stack">RTL</span>
+              <span className="stack">Java</span>
             </p>
           </div>
         </section>
